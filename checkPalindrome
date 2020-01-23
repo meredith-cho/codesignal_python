@@ -1,0 +1,16 @@
+import math
+
+def checkPalindrome(inputString):
+    1 <= len(inputString) <= pow(10, 5)
+
+    a = inputString[:math.floor(len(inputString) / 2)]
+    b = inputString[math.ceil(len(inputString) / 2):]
+    c = b[::-1]
+    print(a, b, c)
+
+    if(a == c):
+        print("True")
+        return True
+    else:
+        print("False")
+        return False
