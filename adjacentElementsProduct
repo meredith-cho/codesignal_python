@@ -1,0 +1,6 @@
+def adjacentElementsProduct(inputArray):
+    return max(inputArray[i]*inputArray[i+1] for i in range(len(inputArray)-1))
+    
+#너무 어려워서 결국 다른 사람이 한것을 보고 따라함...
+#한줄로 해결하다니...
+#파이썬 공부가 
