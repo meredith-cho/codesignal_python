@@ -1,0 +1,17 @@
+def makeArrayConsecutive2(statues):
+    statues.sort()
+    a = 0
+    # print(statues)
+
+    for status in range(statues[0], statues[len(statues)-1]):
+        print(status)
+        if status + 1 in statues:
+            print(status + 1)
+            print("True")
+        else:
+            print(status + 1)
+            print("False")
+            a += 1
+
+    print(a)
+    return a
